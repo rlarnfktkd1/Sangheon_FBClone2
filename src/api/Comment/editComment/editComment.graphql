@@ -1,0 +1,8 @@
+enum CommentAction {
+  EDIT
+  DELETE
+}
+
+type Mutation {
+  editComment(id: String!, text: String, action: CommentAction!): Comment!
+}
